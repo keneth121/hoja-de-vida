@@ -97,7 +97,7 @@ ul li i {
 }
 
 /* Barras de habilidades */
- .skills {
+.skills {
   max-width: 400px;
   margin: 29px 0;
   font-family: Arial, sans-serif;
@@ -125,7 +125,7 @@ ul li i {
 .fill {
   height: 100%;
   background: linear-gradient(90deg, #a4aec4, #4263f5);
-  width: var(--percent );
+  width: var(--percent);
   color: white;
   font-size: 14px;
   font-weight: bold;
@@ -153,9 +153,11 @@ body.dark section h2 {
   color: #2ecc71;
   border-left-color: #2ecc71;
 }
+
+/* Botones redes */
 .btn-facebook {
   display: inline-block;
-  background-color: #1877f2; /* Azul Facebook */
+  background-color: #1877f2;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -163,8 +165,46 @@ body.dark section h2 {
   font-weight: bold;
   font-family: Arial, sans-serif;
   transition: background-color 0.3s;
+  margin: 5px;
 }
 
 .btn-facebook:hover {
-  background-color: #0d65d9; /* Azul más oscuro al pasar el mouse */
+  background-color: #0d65d9;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 8px;
+  }
+
+  header {
+    padding: 20px 10px;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 18px;
+  }
+
+  .skills {
+    max-width: 100%;
+  }
+
+  .btn-facebook {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 8px 0;
+  }
 }
