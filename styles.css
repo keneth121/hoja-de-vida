@@ -154,25 +154,43 @@ body.dark section h2 {
   border-left-color: #2ecc71;
 }
 
-/* Botones redes */
-.btn-facebook {
-  display: inline-block;
-  background-color: #1877f2;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  transition: background-color 0.3s;
+/* Redes sociales */
+.social-links {
+  margin-top: 15px;
+}
+
+.btn-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 22px;
+  background-color: white;
+  color: #333;
   margin: 5px;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
-.btn-facebook:hover {
-  background-color: #0d65d9;
+.btn-social:hover {
+  transform: scale(1.1);
 }
 
-/* 📱 RESPONSIVE DESIGN */
+/* Colores personalizados */
+.btn-social .fa-facebook {
+  color: #1877f2;
+}
+
+.btn-social .fa-instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+}
+
+/* 📱 Responsive */
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
@@ -201,10 +219,9 @@ body.dark section h2 {
     max-width: 100%;
   }
 
-  .btn-facebook {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 8px 0;
+  .btn-social {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
   }
 }
