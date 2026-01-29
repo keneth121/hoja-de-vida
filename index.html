@@ -1,92 +1,740 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoja de Vida - Kenneth Jiménez</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kenneth Jiménez - Desarrollador Full Stack e Ingeniero de Sistemas con experiencia en operaciones y logística internacional">
+    <meta name="keywords" content="desarrollador, full stack, python, react, javascript, logística, operaciones, colombia">
+    <meta name="author" content="Kenneth Daniel Jiménez Ibañez">
+    <title>Kenneth Jiménez | Desarrollador Full Stack & Operations</title>
+    <link rel="stylesheet" href="styles.css">
+</head> <link rel="shortcut icon" href="IMG/logo kennteh blanco.png" />
 <body>
-  <div class="container">
-    <header>
-      <img src="kenneth foto.jpg" alt="Foto de Kenneth">
-      <h1>Kenneth Daniel Jiménez Ibañez</h1>
-      <p><i class="fa-solid fa-location-dot"></i> Barranquilla, Atlántico – Barrio San Isidro</p>
-      <p><i class="fa-solid fa-phone"></i> 310 549 5452 | <i class="fa-solid fa-envelope"></i> kennethjimenez744@gmail.com</p>
-      <p><i class=| <i class="fa-solid fa-cake-candles"></i> 20 de julio de 2004</p>
-      <button id="theme-toggle"><i class="fa-solid fa-moon"></i> Cambiar tema</button>
-      
-      <!-- Redes sociales con íconos -->
-      <div class="social-links">
-        <a href="https://www.instagram.com/djkennetheldeldegenere/" target="_blank" class="btn-social">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/kenneth.jimenez.60604" target="_blank" class="btn-social">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </div>
-    </header>
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#inicio" class="logo">Kenneth<span>.dev</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-    <section>
-      <h2><i class="fa-solid fa-user"></i> Perfil Profesional</h2>
-      <p class="fade-in">
-        Estudiante de Ingeniería de Sistemas y Computación (4.º semestre) con conocimientos en programación (Python, HTML, React) y experiencia en desarrollo de sistemas básicos para la gestión de pedidos. Interesado en desarrollo de software, automatización de procesos y soporte tecnológico. Experiencia en comercio electrónico y logística internacional, con visión integral de la tecnología en la optimización de procesos.
-      </p>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="hero-badge">Disponible para proyectos</div>
+                <h1 class="hero-title">Tecnología + Operaciones = Soluciones completas.</h1>
+                <p class="hero-subtitle">Full Stack Developer & Operations Manager. Desarrollo software, gestiono logística, optimizo procesos..</p>
+                <p class="hero-experience">Python • JavaScript • React • HTML/CSS | Ingeniería de Sistemas</p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">
+                        <span>Ver Proyectos</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="Hoja de vidad Kenneth.pdf" download class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        <span>Descargar CV</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Años de experiencia</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Proyectos completados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Tecnologías dominadas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration"></div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
     </section>
 
-    <section>
-      <h2><i class="fa-solid fa-graduation-cap"></i> Formación Académica</h2>
-      <ul>
-        <li><i class="fa-solid fa-school"></i> Corporación Universitaria Latinoamericana – Ingeniería de Sistemas y Computación (4.º semestre, 2024 – Actualidad)</li>
-        <li><i class="fa-solid fa-school-flag"></i> Institución Educativa Adolfo León Bolívar Marenco – Bachiller Académico (2021)</li>
-      </ul>
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            <blockquote class="quote">
+                "El mejor código no solo funciona, resuelve problemas reales de negocio."
+            </blockquote>
+
+            <div class="approach-grid">
+                <div class="approach-card fade-in-up">
+                    <div class="card-icon">💻</div>
+                    <h3>Desarrollo Full Stack</h3>
+                    <p>Creo aplicaciones web completas desde el frontend hasta el backend, con bases de datos y APIs robustas.</p>
+                </div>
+                <div class="approach-card fade-in-up">
+                    <div class="card-icon">🎯</div>
+                    <h3>Visión de negocio</h3>
+                    <p>Mi experiencia en operaciones me permite entender qué necesitan realmente los negocios y cómo resolverlo.</p>
+                </div>
+                <div class="approach-card fade-in-up">
+                    <div class="card-icon">🚀</div>
+                    <h3>Resultados medibles</h3>
+                    <p>Me enfoco en crear soluciones que generen impacto tangible: más eficiencia, menos errores, mejor experiencia.</p>
+                </div>
+            </div>
+
+            <div class="bio-section">
+                <div class="bio-content">
+                    <div class="bio-text">
+                        <p><strong>Desarrollador Full Stack e Ingeniero de Sistemas</strong> cursando 5.° semestre en la Corporación Universitaria Latinoamericana (CUL), con una combinación única de habilidades técnicas y experiencia empresarial.</p>
+                        
+                        <p>Desde 2022 lidero operaciones de e-commerce internacional en Marlon Audio, donde gestiono importaciones, logística y procesos de negocio. Esta experiencia me ha dado una <strong>perspectiva invaluable</strong>: sé exactamente qué problemas enfrenta un negocio y cómo resolverlos con código.</p>
+                        
+                        <p>Como desarrollador, me especializo en crear <strong>aplicaciones web prácticas</strong> que automatizan procesos, mejoran la eficiencia y generan valor real. Mis proyectos van desde sistemas POS completos hasta herramientas de automatización que ahorran horas de trabajo manual.</p>
+                        
+                        <p>Lo que me diferencia: combino la <strong>mente analítica de un programador</strong> con la <strong>visión estratégica de alguien que ha operado un negocio</strong>. No solo escribo código limpio, entiendo el "por qué" detrás de cada feature.</p>
+                    </div>
+                    
+                    <div class="bio-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🎓</div>
+                            <h4>Formación</h4>
+                            <p>5° semestre Ing. Sistemas</p>
+                            <p class="highlight-detail">CUL - 2024/presente</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">📜</div>
+                            <h4>Certificaciones</h4>
+                            <p>Programación - U. Libre</p>
+                            <p class="highlight-detail">Robocorp Python RPA</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">📍</div>
+                            <h4>Ubicación</h4>
+                            <p>Barranquilla, Colombia</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="value-proposition">
+                <h3>¿Por qué trabajar conmigo?</h3>
+                <div class="value-grid">
+                    <div class="value-item fade-in-up">
+                        <span class="value-number">01</span>
+                        <h4>Hablo dos idiomas: código y negocio</h4>
+                        <p>Puedo sentarme con tu equipo técnico a revisar arquitectura, o con tu CEO a entender objetivos de negocio.</p>
+                    </div>
+                    <div class="value-item fade-in-up">
+                        <span class="value-number">02</span>
+                        <h4>Código limpio, mantenible y escalable</h4>
+                        <p>No solo hago que funcione. Escribo código pensando en el desarrollador que lo mantendrá en 2 años.</p>
+                    </div>
+                    <div class="value-item fade-in-up">
+                        <span class="value-number">03</span>
+                        <h4>Experiencia probada en producción</h4>
+                        <p>Mis sistemas están siendo usados en operaciones reales, sirviendo clientes y procesando transacciones diarias.</p>
+                    </div>
+                    <div class="value-item fade-in-up">
+                        <span class="value-number">04</span>
+                        <h4>Mentalidad de resolución de problemas</h4>
+                        <p>No espero tickets perfectos. Investigo, propongo soluciones y ejecuto con autonomía.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-      <h2><i class="fa-solid fa-briefcase"></i> Experiencia Laboral</h2>
-      <h3 class="hover-scale">Marlon Audio – Tienda Virtual (2022 – Actualidad)</h3>
-      <ul>
-        <li>Implementación de herramientas digitales para control de inventario y ventas.</li>
-        <li>Manejo de plataformas online para gestión de procesos.</li>
-        <li>Optimización de procesos mediante el uso de herramientas tecnológicas.</li>
-      </ul>
-      <h3 class="hover-scale">Proyecto freelance – Restaurante de comidas rápidas (2025)</h3>
-      <ul>
-        <li>Diseño y desarrollo de un sistema digital para toma de pedidos.</li>
-        <li>Automatización de la gestión interna, reduciendo tiempos de atención.</li>
-        <li>Uso de Python y herramientas web para el desarrollo del sistema.</li>
-      </ul>
+    <!-- Proyectos con imágenes -->
+    <section id="proyectos" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <p class="section-intro">Aplicaciones web y sistemas que he desarrollado para resolver problemas reales</p>
+
+            <!-- Proyecto destacado con imagen grande -->
+            <div class="project-featured fade-in-up">
+                <a href="https://keneth121.github.io/Lion-Pos1/" target="_blank" class="project-image-link">
+                    <div class="project-image-wrapper">
+                        <img src="IMG/Panel Inicio Secion }.png" alt="Sistema POS" class="project-image">
+                        <div class="project-overlay">
+                            <span class="overlay-text">Ver proyecto →</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="project-featured-content">
+                    <div class="project-badge">⭐ Proyecto destacado</div>
+                    <h3>Sistema POS & Gestión de Inventario</h3>
+                    <p class="project-description">Sistema completo de punto de venta con gestión de inventario en tiempo real, módulo de clientes, reportes de ventas y panel administrativo. Desarrollado desde cero para optimizar operaciones comerciales de Marlon Audio.</p>
+                    
+                    <div class="project-features">
+                        <h4>Características principales:</h4>
+                        <div class="features-grid">
+                            <div class="feature-item">✓ Interfaz intuitiva para registro de ventas</div>
+                            <div class="feature-item">✓ Control de stock en tiempo real</div>
+                            <div class="feature-item">✓ Base de datos de clientes y proveedores</div>
+                            <div class="feature-item">✓ Reportes y estadísticas de ventas</div>
+                            <div class="feature-item">✓ Sistema de usuarios con roles</div>
+                            <div class="feature-item">✓ Alertas de inventario bajo</div>
+                        </div>
+                    </div>
+
+                    <div class="project-impact-box">
+                        <strong>💡 Impacto:</strong> Sistema usado actualmente en producción, procesando +100 ventas mensuales y gestionando inventario de +500 productos
+                    </div>
+
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>Firebase</span>
+                        <span>HTML5/CSS3</span>
+                        <span>LocalStorage</span>
+                        <span>Chart.js</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/keneth121/Lion-Pos1.git" target="_blank" class="project-link primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://keneth121.github.io/Lion-Pos1/" target="_blank" class="project-link secondary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                            Ver Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de proyectos con imágenes -->
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card fade-in-up">
+                    <a href="https://keneth121.github.io/registro-de-pedidos./" target="_blank" class="project-card-link">
+                        <div class="project-image-wrapper">
+                            <img src="IMG/image.png" alt="Sistema Restaurante" class="project-image">
+                            <div class="project-overlay">
+                                <span class="overlay-text">Ver proyecto →</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Sistema de Gestión para Restaurante</h3>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <p class="project-description">Aplicación web para toma de pedidos, seguimiento de mesas y gestión de cocina. Incluye módulo de reportes diarios y control de inventario básico. <H4>Esto es un demo.</H4> </p> 
+                            
+                            <div class="project-impact">
+                                <strong>Resultado:</strong> 40% reducción en errores de pedidos y mejora en tiempos de atención
+                            </div>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>SQLite</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card fade-in-up">
+                    <a href="https://kennethjimenez.online/" target="_blank" class="project-card-link">
+                        <div class="project-image-wrapper">
+                            <img src="IMG/Portafolio.png" alt="Portafolio Web" class="project-image">
+                            <div class="project-overlay">
+                                <span class="overlay-text">Ver sitio →</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Portafolio Web Profesional</h3>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <p class="project-description">Portafolio personal responsive con diseño moderno, animaciones suaves y optimizado para SEO. Construido con HTML, CSS y JavaScript vanilla.</p>
+                            <div class="project-impact">
+                                <strong>Resultado:</strong> Presencia profesional online con +1000 visitas mensuales
+                            </div>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Responsive</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card fade-in-up">
+                    <a href="https://drive.google.com/file/d/1_piaCfGVvCdjxh26D3GiLYI-is-eSE36/view?usp=sharing" target="_blank" class="project-card-link">
+                        <div class="project-image-wrapper">
+                            <img src="IMG/Convertidor.png" alt="Calculadora Importación" class="project-image">
+                            <div class="project-overlay">
+                                <span class="overlay-text">Ver proyecto →</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Convertidor de Youtube </h3>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <p class="project-description">Herramienta web para descargar videos o musica en mp3 de Youtube.</p>
+                            <div class="project-impact">
+                                <strong>Resultados:</strong> Puedes descargar de Youtube cualquier video o musica 
+                            </div>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                                <span>LocalStorage</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Proyecto 4 -->
+                 
+
+                <!-- Proyecto 5 -->
+                 
+
+
+
+            <div class="projects-cta fade-in-up">
+                <p>¿Interesado en ver más proyectos o colaborar?</p>
+                <a href="#contacto" class="btn btn-primary">Hablemos</a>
+            </div>
+        </div>
     </section>
 
-    <section>
-      <h2><i class="fa-solid fa-code"></i> Habilidades</h2>
-      <div class="skills">
-        <div class="skill-bar">
-          <span>Python</span>
-          <div class="bar"><div class="fill" style="--percent:65%">65%</div></div>
+    <!-- Habilidades -->
+    <section id="habilidades" class="section">
+        <div class="container">
+            <h2 class="section-title">Stack Tecnológico & Habilidades</h2>
+            <p class="section-intro">Tecnologías y competencias que domino para crear soluciones completas</p>
+
+            <!-- Stack técnico -->
+            <div class="tech-stack-grid">
+                <div class="stack-category fade-in-up">
+                    <div class="stack-icon">🎨</div>
+                    <h3>Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-name">HTML5 & CSS3</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">JavaScript (ES6+)</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">React</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Responsive Design</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category fade-in-up">
+                    <div class="stack-icon">⚙️</div>
+                    <h3>Backend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-name">Python</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Node.js</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 65%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">APIs REST</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Flask</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category fade-in-up">
+                    <div class="stack-icon">🗄️</div>
+                    <h3>Bases de Datos</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-name">MySQL / PostgreSQL</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Firebase</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">SQLite</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Diseño de BD</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category fade-in-up">
+                    <div class="stack-icon">🛠️</div>
+                    <h3>Tools & DevOps</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-name">Git & GitHub</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">VS Code</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Docker (básico)</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 60%"></div></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Linux/Terminal</span>
+                            <div class="tech-bar"><div class="tech-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Habilidades de negocio -->
+            <div class="business-skills">
+                <h3>Habilidades Complementarias</h3>
+                <div class="business-grid">
+                    <div class="business-card fade-in-up">
+                        <div class="business-icon">🌍</div>
+                        <h4>Operaciones & Logística</h4>
+                        <ul>
+                            <li>Gestión de operaciones de e-commerce</li>
+                            <li>Logística internacional (importaciones)</li>
+                            <li>Optimización de procesos</li>
+                            <li>Control de inventarios</li>
+                        </ul>
+                    </div>
+
+                    <div class="business-card fade-in-up">
+                        <div class="business-icon">💼</div>
+                        <h4>Gestión de Proyectos</h4>
+                        <ul>
+                            <li>Planificación y ejecución de proyectos</li>
+                            <li>Coordinación de equipos</li>
+                            <li>Análisis de requerimientos</li>
+                            <li>Entrega en tiempo y presupuesto</li>
+                        </ul>
+                    </div>
+
+                    <div class="business-card fade-in-up">
+                        <div class="business-icon">🤝</div>
+                        <h4>Soft Skills</h4>
+                        <ul>
+                            <li>Liderazgo de equipos</li>
+                            <li>Comunicación efectiva</li>
+                            <li>Resolución de problemas</li>
+                            <li>Adaptabilidad y aprendizaje rápido</li>
+                        </ul>
+                    </div>
+
+                    <div class="business-card fade-in-up">
+                        <div class="business-icon">🎵</div>
+                        <h4>Habilidades Adicionales</h4>
+                        <ul>
+                            <li>DJ profesional (eventos)</li>
+                            <li>Manejo de audio y ecualización</li>
+                            <li>Diseño básico (Photoshop/Canva)</li>
+                            <li>Inglés en formación</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="skill-bar">
-          <span>HTML</span>
-          <div class="bar"><div class="fill" style="--percent:80%">80%</div></div>
-        </div>
-        <div class="skill-bar">
-          <span>React</span>
-          <div class="bar"><div class="fill" style="--percent:25%">25%</div></div>
-        </div>
-        <div class="skill-bar">
-          <span>SQL</span>
-          <div class="bar"><div class="fill" style="--percent:30%">30%</div></div>
-        </div>
-      </div>
     </section>
 
-    <footer>
-      <center><p>© 2025 | Hoja de Vida – Kenneth Jiménez</p></center>
+    <!-- Experiencia -->
+    <section id="experiencia" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <p class="section-intro">Mi trayectoria combinando desarrollo de software con gestión de operaciones</p>
+
+            <div class="experience-timeline">
+                <div class="experience-item fade-in-up">
+                    <div class="experience-date">2024 - Presente</div>
+                    <div class="experience-content">
+                        <div class="experience-icon">💻</div>
+                        <div class="experience-text">
+                            <h3>Desarrollador Full Stack Freelance</h3>
+                            <h4>Proyectos independientes</h4>
+                            <p class="experience-description">Desarrollo de aplicaciones web personalizadas y sistemas de gestión para pequeños y medianos negocios. Especializado en soluciones que automatizan procesos y mejoran eficiencia operativa.</p>
+                            <ul class="experience-achievements">
+                                <li>✓ Desarrollo de sistema POS completo con más de 100 transacciones procesadas mensualmente</li>
+                                <li>✓ Creación de herramientas de automatización que reducen trabajo manual en 90%</li>
+                                <li>✓ Implementación de sistemas web responsive optimizados para mobile-first</li>
+                                <li>✓ Integración con APIs de terceros y servicios cloud (Firebase, etc.)</li>
+                            </ul>
+                            <div class="experience-tags">
+                                <span>Python</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>Firebase</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item fade-in-up">
+                    <div class="experience-date">2022 - Presente</div>
+                    <div class="experience-content">
+                        <div class="experience-icon">🌐</div>
+                        <div class="experience-text">
+                            <h3>Director de Operaciones y Logística</h3>
+                            <h4>Marlon Audio - E-commerce</h4>
+                            <p class="experience-description">Liderazgo completo de operaciones de comercio electrónico especializado en audio profesional, con gestión de importaciones internacionales y logística end-to-end.</p>
+                            <ul class="experience-achievements">
+                                <li>✓ Coordinación de importaciones desde China y USA con gestión directa de proveedores internacionales</li>
+                                <li>✓ Manejo de procesos aduaneros, nacionalización de mercancía y trámites legales</li>
+                                <li>✓ Implementación de sistemas de control de inventario y optimización de stock</li>
+                                <li>✓ Gestión de ventas online, atención postventa y satisfacción del cliente</li>
+                                <li>✓ Optimización de costos de importación y reducción de tiempos de entrega en 30%</li>
+                                <li>✓ Desarrollo de herramientas internas para automatización de procesos operativos</li>
+                            </ul>
+                            <div class="experience-highlight">
+                                <strong>💡 Valor agregado:</strong> Esta experiencia me dio perspectiva real sobre problemas de negocio que ahora resuelvo con código. Entiendo desde ambos lados: qué necesita el negocio y cómo construirlo técnicamente.
+                            </div>
+                            <div class="experience-tags">
+                                <span>E-commerce</span>
+                                <span>Logística Internacional</span>
+                                <span>Gestión de Operaciones</span>
+                                <span>Optimización de Procesos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educación -->
+            <div class="education-section">
+                <h3>🎓 Formación Académica</h3>
+                <div class="education-cards">
+                    <div class="education-card fade-in-up">
+                        <div class="education-icon">🎓</div>
+                        <div class="education-content">
+                            <h4>Ingeniería de Sistemas y Computación</h4>
+                            <p class="education-institution">Corporación Universitaria Latinoamericana (CUL)</p>
+                            <p class="education-status">5.° Semestre | 2024 - Presente</p>
+                            <p class="education-detail">Enfoque en desarrollo de software, algoritmos, estructuras de datos y arquitectura de aplicaciones</p>
+                        </div>
+                    </div>
+
+                    <div class="education-card fade-in-up">
+                        <div class="education-icon">📜</div>
+                        <div class="education-content">
+                            <h4>Certificación en Programación Básica</h4>
+                            <p class="education-institution">Universidad Libre</p>
+                            <p class="education-status">2024</p>
+                            <p class="education-detail">Fundamentos de programación y lógica computacional</p>
+                        </div>
+                    </div>
+
+                    <div class="education-card fade-in-up">
+                        <div class="education-icon">🤖</div>
+                        <div class="education-content">
+                            <h4>Robocorp - Certificación Python RPA Nivel 1</h4>
+                            <p class="education-institution">Robocorp</p>
+                            <p class="education-status">2024</p>
+                            <p class="education-detail">Automatización robótica de procesos con Python</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title">Hablemos</h2>
+            <p class="contact-intro">¿Buscas un desarrollador que combine habilidades técnicas con visión de negocio? <br>Estoy disponible para proyectos freelance, posiciones full-time o colaboraciones.</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info-section">
+                    <h3>Información de contacto</h3>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:kennethjimenez744@gmail.com" class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-method-content">
+                                <span class="contact-method-label">Email</span>
+                                <span class="contact-method-value">kennethjimenez744@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/573105495452?text=Hola%20Kenneth,%20vi%20tu%20portafolio%20y%20me%20interesa%20contactarte" target="_blank" class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-method-content">
+                                <span class="contact-method-label">WhatsApp</span>
+                                <span class="contact-method-value">Kenneth Jiménez</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/keneth121" target="_blank" class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-method-content">
+                                <span class="contact-method-label">GitHub</span>
+                                <span class="contact-method-value">kennethjimenez</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/kenneth-jimenez-373b67379/" target="_blank" class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-method-content">
+                                <span class="contact-method-label">LinkedIn</span>
+                                <span class="contact-method-value">linkedin.com/in/kennethjimenez</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-extra-info">
+                        <div class="info-box">
+                            <strong>📍 Ubicación</strong>
+                            <p>Barranquilla, Atlántico, Colombia</p>
+                            <p class="info-detail">Disponible para trabajo remoto, híbrido o presencial</p>
+                        </div>
+
+                        <div class="info-box">
+                            <strong>🌐 Idiomas</strong>
+                            <p>Español (nativo) • Inglés (en formación)</p>
+                        </div>
+
+                        <div class="info-box">
+                            <strong>⏰ Disponibilidad</strong>
+                            <p>Lun - Vie: 8:00 AM - 9:00 PM</p>
+                            <p class="info-detail">Respuesta promedio: 2-4 horas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h3>Envíame un mensaje</h3>
+                    <form id="contactForm" class="contact-form">
+        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Nombre completo *</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Email *</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder=" ">
+                            <label for="subject">Asunto</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="6" required placeholder=" "></textarea>
+                            <label for="message">Mensaje *</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Enviar mensaje</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/mdazzgqv" method="POST">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-brand">Kenneth<span>.dev</span></p>
+                    <p class="footer-tagline">Construyendo el futuro, una línea de código a la vez.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/keneth121" target="_blank" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kenneth-jimenez-373b67379/" target="_blank" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/573105495452" target="_blank" aria-label="WhatsApp">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kenneth Daniel Jiménez Ibañez. Desarrollado con 💙 en Barranquilla, Colombia</p>
+                <a href="#inicio" class="back-to-top">↑ Volver arriba</a>
+            </div>
+        </div>
     </footer>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
