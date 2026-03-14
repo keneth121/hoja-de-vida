@@ -7,8 +7,14 @@
     <meta name="keywords" content="desarrollador, full stack, python, react, javascript, logística, operaciones, colombia">
     <meta name="author" content="Kenneth Daniel Jiménez Ibañez">
     <title>Kenneth Jiménez | Desarrollador Full Stack & Operations</title>
+    
+    <!-- Fuentes modernas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="IMG/logo kennteh blanco.png" />
     <link rel="stylesheet" href="styles.css">
-</head> <link rel="shortcut icon" href="IMG/logo kennteh blanco.png" />
+</head>
 <body>
     <!-- Navegación -->
     <nav class="navbar" id="navbar">
@@ -36,7 +42,7 @@
             <div class="hero-content fade-in">
                 <div class="hero-badge">Disponible para proyectos</div>
                 <h1 class="hero-title">Tecnología + Operaciones = Soluciones completas.</h1>
-                <p class="hero-subtitle">Full Stack Developer & Operations Manager. Desarrollo software, gestiono logística, optimizo procesos..</p>
+                <p class="hero-subtitle">Full Stack Developer & Operations Manager. Desarrollo software, gestiono logística, optimizo procesos.</p>
                 <p class="hero-experience">Python • JavaScript • React • HTML/CSS | Ingeniería de Sistemas</p>
                 <div class="hero-buttons">
                     <a href="#proyectos" class="btn btn-primary">
@@ -129,7 +135,6 @@
                             <div class="highlight-icon">📍</div>
                             <h4>Ubicación</h4>
                             <p>Barranquilla, Colombia</p>
-                            
                         </div>
                     </div>
                 </div>
@@ -162,72 +167,78 @@
             </div>
         </div>
     </section>
- <!-- Proyecto destacado con imagen grande -->
-<div class="project-featured fade-in-up">
-    <a href="https://keneth121.github.io/Lion-Pos1/" target="_blank" class="project-image-link">
-        <div class="project-image-wrapper">
-            <img src="IMG/Panel Inicio Secion }.png" alt="Sistema POS" class="project-image">
-            <div class="project-overlay">
-                <span class="overlay-text">Ver proyecto →</span>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-intro">Soluciones reales que han generado impacto en operaciones y negocios</p>
+
+            <!-- Proyecto destacado -->
+            <div class="project-featured fade-in-up">
+                <a href="https://lion-pos-1-1.vercel.app/" target="_blank" class="project-image-link">
+                    <div class="project-image-wrapper">
+                        <img src="IMG/lionpos2.png" alt="Sistema POS" class="project-image">
+                        <div class="project-overlay">
+                            <span class="overlay-text">Ver proyecto →</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="project-featured-content">
+                    <div class="project-badge">⭐ Proyecto destacado</div>
+                    <h3>Lion POS — Sistema POS & Gestión de Inventario</h3>
+                    <p class="project-description">
+                        Sistema completo de punto de venta con gestión de inventario en tiempo real, módulo de clientes,
+                        reportes de ventas y panel administrativo. Desarrollado con React + Vite para una experiencia
+                        rápida y moderna, optimizado para las operaciones comerciales de Marlon Audio.
+                    </p>
+
+                    <div class="project-features">
+                        <h4>Características principales:</h4>
+                        <div class="features-grid">
+                            <div class="feature-item">Interfaz SPA con React y componentes reutilizables</div>
+                            <div class="feature-item">Control de stock en tiempo real</div>
+                            <div class="feature-item">Base de datos de clientes y proveedores</div>
+                            <div class="feature-item">Reportes y estadísticas de ventas</div>
+                            <div class="feature-item">Sistema de usuarios con roles</div>
+                            <div class="feature-item">Alertas de inventario bajo</div>
+                        </div>
+                    </div>
+
+                    <div class="project-impact-box">
+                        <strong>💡 Impacto:</strong> Sistema en producción procesando +100 ventas mensuales
+                        y gestionando inventario de +500 productos. Migrado y mejorado de HTML/CSS a React + Vite.
+                    </div>
+
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Vite</span>
+                        <span>JavaScript</span>
+                        <span>Firebase</span>
+                        <span>CSS3</span>
+                        <span>Chart.js</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/keneth121/Lion-Pos1.git" target="_blank" class="project-link primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://lion-pos-1-1.vercel.app/" target="_blank" class="project-link secondary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                            Ver Demo
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </a>
-    <div class="project-featured-content">
-        <div class="project-badge">⭐ Proyecto destacado</div>
-        <h3>Lion POS — Sistema POS & Gestión de Inventario</h3>
-        <p class="project-description">
-            Sistema completo de punto de venta con gestión de inventario en tiempo real, módulo de clientes,
-            reportes de ventas y panel administrativo. Desarrollado con React + Vite para una experiencia
-            rápida y moderna, optimizado para las operaciones comerciales de Marlon Audio.
-        </p>
 
-        <div class="project-features">
-            <h4>Características principales:</h4>
-            <div class="features-grid">
-                <div class="feature-item">✓ Interfaz SPA con React y componentes reutilizables</div>
-                <div class="feature-item">✓ Control de stock en tiempo real</div>
-                <div class="feature-item">✓ Base de datos de clientes y proveedores</div>
-                <div class="feature-item">✓ Reportes y estadísticas de ventas</div>
-                <div class="feature-item">✓ Sistema de usuarios con roles</div>
-                <div class="feature-item">✓ Alertas de inventario bajo</div>
-            </div>
-        </div>
-
-        <div class="project-impact-box">
-            <strong>💡 Impacto:</strong> Sistema en producción procesando +100 ventas mensuales
-            y gestionando inventario de +500 productos. Migrado y mejorado de HTML/CSS a React + Vite.
-        </div>
-
-        <div class="project-tech">
-            <span>React</span>
-            <span>Vite</span>
-            <span>JavaScript</span>
-            <span>Firebase</span>
-            <span>CSS3</span>
-            <span>Chart.js</span>
-        </div>
-
-        <div class="project-links">
-            <a href="https://github.com/keneth121/Lion-Pos1.git" target="_blank" class="project-link primary">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                GitHub
-            </a>
-            <a href="https://keneth121.github.io/Lion-Pos1/" target="_blank" class="project-link secondary">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
-                </svg>
-                Ver Demo
-            </a>
-        </div>
-    </div>
-</div>
-
-
-            <!-- Grid de proyectos con imágenes -->
+            <!-- Grid de proyectos -->
             <div class="projects-grid">
-                <!-- Proyecto 1 -->
+                <!-- Proyecto 1: Sistema Restaurante -->
                 <div class="project-card fade-in-up">
                     <a href="https://keneth121.github.io/registro-de-pedidos./" target="_blank" class="project-card-link">
                         <div class="project-image-wrapper">
@@ -236,88 +247,166 @@
                                 <span class="overlay-text">Ver proyecto →</span>
                             </div>
                         </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>Sistema de Gestión para Restaurante</h3>
-                                <span class="project-year">2025</span>
-                            </div>
-                            <p class="project-description">Aplicación web para toma de pedidos, seguimiento de mesas y gestión de cocina. Incluye módulo de reportes diarios y control de inventario básico. <H4>Esto es un demo.</H4> </p> 
-                            
-                            <div class="project-impact">
-                                <strong>Resultado:</strong> 40% reducción en errores de pedidos y mejora en tiempos de atención
-                            </div>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>Flask</span>
-                                <span>SQLite</span>
-                                <span>HTML/CSS</span>
-                            </div>
-                        </div>
                     </a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Sistema de Gestión para Restaurante</h3>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <p class="project-description">Aplicación web para toma de pedidos, seguimiento de mesas y gestión de cocina. Incluye módulo de reportes diarios y control de inventario básico.</p>
+                        <p class="project-note"><small>✨ Esto es un demo funcional</small></p>
+                        <div class="project-impact">
+                            <strong>Resultado:</strong> 40% reducción en errores de pedidos y mejora en tiempos de atención
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>SQLite</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="project-card-links">
+                                  </svg>
+                             </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Proyecto 2 -->
+                <!-- Proyecto 2: Portafolio -->
                 <div class="project-card fade-in-up">
                     <a href="https://kennethjimenez.online/" target="_blank" class="project-card-link">
                         <div class="project-image-wrapper">
                             <img src="IMG/Portafolio.png" alt="Portafolio Web" class="project-image">
                             <div class="project-overlay">
-                                <span class="overlay-text">Ver sitio →</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>Portafolio Web Profesional</h3>
-                                <span class="project-year">2026</span>
-                            </div>
-                            <p class="project-description">Portafolio personal responsive con diseño moderno, animaciones suaves y optimizado para SEO. Construido con HTML, CSS y JavaScript vanilla.</p>
-                            <div class="project-impact">
-                                <strong>Resultado:</strong> Presencia profesional online con +1000 visitas mensuales
-                            </div>
-                            <div class="project-tech">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                                <span>Responsive</span>
-                            </div>
+                             </div>
                         </div>
                     </a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Portafolio Web Profesional</h3>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <p class="project-description">Portafolio personal responsive con diseño moderno, animaciones suaves y optimizado para SEO. Construido con HTML, CSS y JavaScript vanilla.</p>
+                        <div class="project-impact">
+                            <strong>Resultado:</strong> Presencia profesional online con +1000 visitas mensuales
+                        </div>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+                        <div class="project-card-links">
+                             </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Proyecto 3 -->
+                <!-- Proyecto 3: Convertidor Youtube -->
                 <div class="project-card fade-in-up">
                     <a href="https://drive.google.com/file/d/1_piaCfGVvCdjxh26D3GiLYI-is-eSE36/view?usp=sharing" target="_blank" class="project-card-link">
                         <div class="project-image-wrapper">
-                            <img src="IMG/Convertidor.png" alt="Calculadora Importación" class="project-image">
+                            <img src="IMG/Convertidor.png" alt="Convertidor Youtube" class="project-image">
                             <div class="project-overlay">
                                 <span class="overlay-text">Ver proyecto →</span>
                             </div>
                         </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>Convertidor de Youtube </h3>
-                                <span class="project-year">2025</span>
-                            </div>
-                            <p class="project-description">Herramienta web para descargar videos o musica en mp3 de Youtube.</p>
-                            <div class="project-impact">
-                                <strong>Resultados:</strong> Puedes descargar de Youtube cualquier video o musica 
-                            </div>
-                            <div class="project-tech">
-                                <span>JavaScript</span>
-                                <span>HTML/CSS</span>
-                                <span>LocalStorage</span>
+                    </a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Convertidor de Youtube</h3>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <p class="project-description">Herramienta web para descargar videos o música en MP3 de Youtube. Interfaz simple y fácil de usar.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>LocalStorage</span>
+                        </div>
+                        <div class="project-card-links">
+                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                 </svg>
+                             </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4: LynShop -->
+                <div class="project-card fade-in-up">
+                    <a href="https://lynshop.vercel.app/" target="_blank" class="project-card-link">
+                        <div class="project-image-wrapper">
+                            <img src="IMG/Lynshot.png" alt="LynShop E-commerce" class="project-image">
+                            <div class="project-overlay">
+                                <span class="overlay-text">Ver proyecto →</span>
                             </div>
                         </div>
                     </a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>LynShop — Tienda E-commerce</h3>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <p class="project-description">
+                            Plataforma de e-commerce completa con catálogo de productos, carrito de compras,
+                            gestión de pedidos y panel administrativo. Desarrollada con React + Vite.
+                        </p>
+                        <div class="project-impact">
+                            <strong>Resultado:</strong> Sistema funcional con gestión de inventario y autenticación por roles
+                        </div>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Vite</span>
+                            <span>.NET</span>
+                            <span>Supabase</span>
+                            <span>Cloudinary</span>
+                        </div>
+                        <div class="project-card-links">
+                                 </svg>
+                                 
+                            </a>
+                                 </svg>
+                             </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Proyecto 4 -->
-                 
-
-                <!-- Proyecto 5 -->
-                 
-
-
+                <!-- Proyecto 5: Soporte Tecnológico -->
+                <div class="project-card fade-in-up">
+                    <a href="https://soporte-ti-frontend-eight.vercel.app/login" target="_blank" class="project-card-link">
+                        <div class="project-image-wrapper">
+                            <img src="IMG/Soporte To.png" alt="Sistema Soporte Tecnológico" class="project-image">
+                            <div class="project-overlay">
+                                <span class="overlay-text">Ver proyecto →</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Sistema de Soporte Tecnológico</h3>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <p class="project-description">
+                            Plataforma de gestión de tickets de soporte técnico con sistema de roles
+                            (admin, técnico, usuario), seguimiento de incidencias en tiempo real.
+                        </p>
+                        <div class="project-impact">
+                            <strong>Resultado:</strong> Centralización de incidencias técnicas con trazabilidad completa
+                        </div>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>C# / .NET</span>
+                            <span>Supabase</span>
+                            <span>JWT Auth</span>
+                            <span>Material UI</span>
+                        </div>
+                        <div class="project-card-links">
+                                 </svg>
+                             </a>
+                                  </svg>
+                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="projects-cta fade-in-up">
                 <p>¿Interesado en ver más proyectos o colaborar?</p>
@@ -611,7 +700,7 @@
                             </div>
                             <div class="contact-method-content">
                                 <span class="contact-method-label">WhatsApp</span>
-                                <span class="contact-method-value">Kenneth Jiménez</span>
+                                <span class="contact-method-value">+57 310 549 5452</span>
                             </div>
                         </a>
 
@@ -623,7 +712,7 @@
                             </div>
                             <div class="contact-method-content">
                                 <span class="contact-method-label">GitHub</span>
-                                <span class="contact-method-value">kennethjimenez</span>
+                                <span class="contact-method-value">@keneth121</span>
                             </div>
                         </a>
 
@@ -635,7 +724,7 @@
                             </div>
                             <div class="contact-method-content">
                                 <span class="contact-method-label">LinkedIn</span>
-                                <span class="contact-method-value">linkedin.com/in/kennethjimenez</span>
+                                <span class="contact-method-value">Kenneth Jiménez</span>
                             </div>
                         </a>
                     </div>
@@ -654,7 +743,7 @@
 
                         <div class="info-box">
                             <strong>⏰ Disponibilidad</strong>
-                            <p>Lun - Vie: 8:00 AM - 9:00 PM</p>
+                            <p>Lun - Vie: 8:00 AM - 6:00 PM</p>
                             <p class="info-detail">Respuesta promedio: 2-4 horas</p>
                         </div>
                     </div>
@@ -662,8 +751,7 @@
 
                 <div class="contact-form-section">
                     <h3>Envíame un mensaje</h3>
-                    <form id="contactForm" class="contact-form">
-        
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/mdazzgqv" method="POST">
                         <div class="form-row">
                             <div class="form-group">
                                 <input type="text" id="name" name="name" required placeholder=" ">
@@ -689,8 +777,8 @@
                                 <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                             </svg>
                         </button>
-                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/mdazzgqv" method="POST">
-
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
                 </div>
             </div>
         </div>
