@@ -8,6 +8,10 @@ const navbar = document.getElementById('navbar');
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     
+    // Actualizar estado para accesibilidad (lectores de pantalla)
+    const isExpanded = navLinks.classList.contains('active');
+    menuToggle.setAttribute('aria-expanded', isExpanded);
+
     // Animación del icono hamburguesa a X
     const spans = menuToggle.querySelectorAll('span');
     if (navLinks.classList.contains('active')) {
@@ -25,6 +29,7 @@ menuToggle.addEventListener('click', () => {
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
         const spans = menuToggle.querySelectorAll('span');
         spans[0].style.transform = '';
         spans[1].style.opacity = '1';
@@ -36,6 +41,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 document.addEventListener('click', (e) => {
     if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
         navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
         const spans = menuToggle.querySelectorAll('span');
         spans[0].style.transform = '';
         spans[1].style.opacity = '1';

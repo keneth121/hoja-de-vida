@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +8,18 @@
     <meta name="author" content="Kenneth Daniel Jiménez Ibañez">
     <title>Kenneth Jiménez | Desarrollador Full Stack & Operations</title>
     
+    <!-- Etiquetas Open Graph para compartir en Redes Sociales/WhatsApp -->
+    <meta property="og:title" content="Kenneth Jiménez | Desarrollador Full Stack & Operations">
+    <meta property="og:description" content="Desarrollador Full Stack e Ingeniero de Sistemas con experiencia en operaciones y logística.">
+    <meta property="og:image" content="IMG/Portafolio.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+
     <!-- Fuentes modernas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="IMG/logo kennteh blanco.png" />
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -28,7 +36,7 @@
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -51,7 +59,7 @@
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </a>
-                    <a href="Hoja de vidad Kenneth.pdf" download class="btn btn-secondary">
+                    <a href="Kenneth_Jimenez.pdf" download class="btn btn-secondary">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
                         </svg>
@@ -265,8 +273,12 @@
                             <span>HTML/CSS</span>
                         </div>
                         <div class="project-card-links">
-                                  </svg>
-                             </a>
+                            <a href="https://keneth121.github.io/registro-de-pedidos./" target="_blank" class="project-link secondary" aria-label="Ver demo del Sistema de Restaurante">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                Ver Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -277,6 +289,7 @@
                         <div class="project-image-wrapper">
                             <img src="IMG/Portafolio.png" alt="Portafolio Web" class="project-image">
                             <div class="project-overlay">
+                                <span class="overlay-text">Ver proyecto →</span>
                              </div>
                         </div>
                     </a>
@@ -296,14 +309,19 @@
                             <span>Responsive</span>
                         </div>
                         <div class="project-card-links">
-                             </a>
+                            <a href="https://kennethjimenez.online/" target="_blank" class="project-link secondary" aria-label="Ver demo del Portafolio">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                Ver Demo
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Proyecto 3: Convertidor Youtube -->
                 <div class="project-card fade-in-up">
-                    <a href="https://drive.google.com/file/d/1_piaCfGVvCdjxh26D3GiLYI-is-eSE36/view?usp=sharing" target="_blank" class="project-card-link">
+                <a href="https://yt.kennethserver.online/" target="_blank" class="project-card-link">
                         <div class="project-image-wrapper">
                             <img src="IMG/Convertidor.png" alt="Convertidor Youtube" class="project-image">
                             <div class="project-overlay">
@@ -323,9 +341,12 @@
                             <span>LocalStorage</span>
                         </div>
                         <div class="project-card-links">
-                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                 </svg>
-                             </a>
+                        <a href="https://yt.kennethserver.online/" target="_blank" class="project-link secondary" aria-label="Ver Convertidor de Youtube">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                            Ver Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -360,11 +381,12 @@
                             <span>Cloudinary</span>
                         </div>
                         <div class="project-card-links">
-                                 </svg>
-                                 
+                            <a href="https://lynshop.vercel.app/" target="_blank" class="project-link secondary" aria-label="Ver demo de LynShop">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                Ver Demo
                             </a>
-                                 </svg>
-                             </a>
                         </div>
                     </div>
                 </div>
@@ -399,10 +421,50 @@
                             <span>Material UI</span>
                         </div>
                         <div class="project-card-links">
-                                 </svg>
-                             </a>
-                                  </svg>
-                             </a>
+                            <a href="https://soporte-ti-frontend-eight.vercel.app/login" target="_blank" class="project-link secondary" aria-label="Ver demo del Sistema de Soporte">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                Ver Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6: Marlon Audio -->
+                <div class="project-card fade-in-up">
+                    <a href="https://marlonaudio.kennethserver.online/" target="_blank" class="project-card-link">
+                        <div class="project-image-wrapper">
+                            <img src="IMG/MarlonAudio.png" alt="Marlon Audio E-commerce" class="project-image">
+                            <div class="project-overlay">
+                                <span class="overlay-text">Ver proyecto →</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Marlon Audio — E-commerce</h3>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <p class="project-description">
+                            Plataforma de e-commerce especializada en la venta de equipos de sonido profesional. 
+                            Desarrollo del frontend y backend para digitalizar el catálogo de productos y optimizar las ventas.
+                        </p>
+                        <div class="project-impact">
+                            <strong>Resultado:</strong> Digitalización de ventas e integración directa con las operaciones logísticas de la tienda.
+                        </div>
+                        <div class="project-tech">
+                            <span>E-commerce</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://marlonaudio.kennethserver.online/" target="_blank" class="project-link secondary" aria-label="Ver demo de Marlon Audio">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                Ver Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -661,6 +723,16 @@
                             <p class="education-institution">Robocorp</p>
                             <p class="education-status">2024</p>
                             <p class="education-detail">Automatización robótica de procesos con Python</p>
+                        </div>
+                    </div>
+
+                    <div class="education-card fade-in-up">
+                        <div class="education-icon">🔧</div>
+                        <div class="education-content">
+                            <h4>Soporte Técnico y Mantenimiento</h4>
+                            <p class="education-institution">SENA</p>
+                            <p class="education-status">Marzo 2026 | 40 horas</p>
+                            <p class="education-detail">Procesos de soporte técnico para el mantenimiento de equipos de cómputo.</p>
                         </div>
                     </div>
                 </div>

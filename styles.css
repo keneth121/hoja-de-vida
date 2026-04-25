@@ -74,10 +74,6 @@ body {
     position: relative;
 }
 
-/* Importar fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
-
 /* ============================================
    BACKGROUND ANIMADO MEJORADO
    ============================================ */
@@ -1086,6 +1082,8 @@ body::before {
     transition: var(--transition-bounce);
     position: relative;
     box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card-link {
@@ -1106,6 +1104,9 @@ body::before {
 
 .project-content {
     padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .project-header {
@@ -1140,6 +1141,14 @@ body::before {
     color: var(--text-light);
 }
 
+/* Clase faltante para notas de proyecto */
+.project-note {
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: block;
+}
+
 .project-impact {
     background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(249, 115, 22, 0.05));
     padding: 1.2rem;
@@ -1166,6 +1175,10 @@ body::before {
     display: flex;
     gap: 0.75rem;
     padding: 0 2.5rem 2.5rem;
+    flex-wrap: wrap; /* Evita que los botones se desborden en pantallas pequeñas */
+    margin-top: auto; /* Empuja los botones siempre al fondo de la tarjeta */
+    padding-top: 1.5rem; /* Separación con el bloque de tecnologías */
+    flex-wrap: wrap;
 }
 
 .project-card-links .project-link {
@@ -2068,6 +2081,17 @@ body::before {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Arreglo para títulos largos de proyectos en móviles */
+    .project-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .project-year {
+        margin-left: 0;
+        align-self: flex-start;
+    }
     
     .form-row {
         grid-template-columns: 1fr;
@@ -2096,6 +2120,16 @@ body::before {
     
     .project-featured-content h3 {
         font-size: 1.8rem;
+    }
+    
+    /* Arreglo para que las nuevas tarjetas de educación se adapten bien */
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .education-icon {
+        margin-bottom: 0;
     }
     
     .contact-wrapper {
@@ -2169,6 +2203,14 @@ body::before {
     
     .project-card-links {
         padding: 0 1.5rem 1.5rem;
+        padding-top: 1.5rem;
+    }
+    
+    /* Arreglo para los métodos de contacto en pantallas muy pequeñas */
+    .contact-method {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1rem;
     }
     
     .value-proposition {
@@ -2236,4 +2278,19 @@ body::before {
 
 .skip-link:focus {
     top: 0;
+}
+
+/* ============================================
+   ACCESIBILIDAD Y RENDIMIENTO (BATERÍA)
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    body::before, body::after {
+        display: none; /* Oculta fondos pesados si el usuario ahorra batería */
+    }
 }
